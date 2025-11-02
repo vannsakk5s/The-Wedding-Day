@@ -15,9 +15,17 @@
     body {
         font-family: 'Kantumruy Pro';
     }
+    .kantum{
+        font-family: 'Kantumruy Pro';
+        font-style: italic;
+    }
     .wedding{
         font-family: 'Moulpali';
         font-weight: 600;
+    }
+
+    .Moulpali{
+        font-family: 'Moulpali';
     }
 
     ::-webkit-scrollbar {
@@ -41,7 +49,7 @@
                 </div>
 
                 <div class="mt-[50px]">
-                    <img class="h-[40px] w-[340px]" src="./image/style--.png" alt="">
+                    <img class="h-[40px] w-[300px]" src="./image/style--.png" alt="">
                 </div>
 
                 <div class="mt-3">
@@ -49,14 +57,10 @@
                         <p class="text-lg text-white">ថ្ងៃទី 20 ខែ​ ឆ្នូ ឆ្នាំ 2025 ម៉ោង​ ៖ ៥:០០ នាទីល្ងាច</p>
                         <p class="text-lg text-white">នៅគេហដ្ឋានខាងស្រី</p>
                     </div>
-                    <div class="flex flex-col justify-center items-center mt-5 bg-black/30 pl-4 p pr-4 pt-4 pb-4 rounded-xl border border-gray-400">
-                        <p class="text-lg text-white">Saturday, 20 December 2025</p>
-                        <p class="text-lg text-white">at 5:00pm</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col justify-center items-center mt-10">
+        <div class="flex flex-col justify-center items-center mt-20">
             <p class="wedding text-2xl text-[#FCC11D]">សិរីមង្គ័រអាពាហ៍ពិពាហ៍</p>
                 <!-- <div class="flex justify-center items-center pt-2">
                     <img class="h-8 mr-4" src="./image/stylekhmer.png" alt="style">
@@ -83,7 +87,7 @@
                 </div>
             </div>
             <div class="mt-10 flex flex-col text-md justify-center items-center">
-                <p class="text-[24px] font-medium  text-[#FCC11D]">មានកិត្តិយសូមគោរពអញ្ចើញ</p>
+                <p class="wedding text-[20px] font-medium  text-[#FCC11D]">មានកិត្តិយសូមគោរពអញ្ចើញ</p>
                 <img class="w-[150px] h-[15px] mt-1"  src="./image/style--1.png" alt="">
                 <div class="flex flex-col justify-center  items-center">
                     <p class="mt-2">ឯកឧត្ដម លោកជំទាវ លោកឧកញ៉ា លោក លោកស្រី អ្នកនាង កញ្ញា</p>
@@ -97,14 +101,14 @@
                 <div class="flex justify-center items-center gap-6 mt-10 text-[#FCC11D]">
                     <div>
                         <div class="flex flex-col justify-center items-center text-[19px]">
-                            កូនប្រុស​​នាម <p class="font-medium text-[20px]">សៀង សុខណៃ</p>
+                            <p class="font-italic">កូនប្រុស​​នាម</p> <p class="font-medium mt-1 text-[20px]">សៀង សុខណៃ</p>
                         </div>
                     </div>
                     <div>
                         <img class="h-[40px]" src="./image/vs.png" alt="">
                     </div>
                     <div>
-                        <div class="flex flex-col justify-center items-center text-[19px]">
+                        <div class="flex flex-col justify-center mt-1 items-center text-[19px]">
                             កូនស្រី​​នាម <p class="font-medium text-[20px]">ភឿង សុផាត់</p>
                         </div>
                     </div>
@@ -118,8 +122,74 @@
                     <p> ស្រុកមង្គលបុរី ខេត្តបន្ទាយមានជ័យ</p>
                 </div>
 
+                <div class="relative">
+                    <div class="absolute mt-[150px] ml-[200px] flex flex-col justify-center items-center">
+                        <div class="font-medium text-xl text-white">
+                            <p class="text-lg font-medium" >
+                                ចំនួនថ្ងៃរាប់ថយក្រោយ
+                            </p>
+                        </div>
+                        <div class="mt-2 flex flex-wrap justify-center gap-1.5 text-center" >
+                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-2xl p-6 w-10 h-10 " >
+                              <p id="days" class="text-md text-white font-bold">00</p>
+                              <span class="text-sm text-white">ថ្ងៃ</span>
+                            </div>
+                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-2xl p-6 w-10 h-10">
+                              <p id="hours" class="text-md text-white font-bold">00</p>
+                              <span class="text-sm text-white">ម៉ោង​</span>
+                            </div>
+                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-2xl p-6 w-10 h-10">
+                              <p id="minutes" class="text-md text-white font-bold">00</p>
+                              <span class="text-sm text-white">នាទី</span>
+                            </div>
+                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-2xl p-6 w-10 h-10">
+                              <p id="seconds" class="text-md text-white font-bold">00</p>
+                              <span class="text-sm text-white">វិនាទី</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <img src="./image/pic-.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-10 flex flex-col text-md justify-center items-center">
+                    <p class="wedding text-[20px] font-medium  text-[#FCC11D]">ទីតាំងកម្មវិធី</p>
+                    <a href="https://maps.app.goo.gl/Yu1q1gwFG7PTtrUV8" class="relative">
+                        <div class="absolute flex gap-1 font-medium bg-white pl-4 pr-4 pt-2 pb-2 rounded-2xl text-md mt-4 ml-2">
+                            <img class="w-6" src="./image/logomap.png" alt="">
+                            Google Map
+                        </div>
+                        <img class="w-[400px] rounded-2xl mt-2" src="./image/map--.png" alt="">
+                        
+                    </a>
+                    
+                    <div class="mt-10 flex flex-col text-md justify-center items-center">
+                        <p class="wedding text-[20px] font-medium  text-[#FCC11D]">កម្រងរូបភាព</p>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <div>
+                                <img class="h-auto w-[190px] rounded-lg" src="./image/1.png" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto w-[190px] rounded-lg" src="./image/2.png" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto w-[190px] rounded-lg" src="./image/3.png" alt="">
+                            </div>
+                            <div>
+                                <img class="h-auto w-[190px] rounded-lg" src="./image/4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-2 flex flex-col justify-center items-center">
+                        <div class="w-screen mt-1 mb-1 p-[0.5px] bg-gradient-to-r from-white via-gray-500/70 to-white animate-gradient-color"></div>
+                        <div>Copyright@ .vannsak25</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
