@@ -16,3 +16,20 @@
     document.getElementById("seconds").innerText = seconds;
   }, 1000);
 
+  function openPopup(src) {
+    document.getElementById('popupImage').src = src;
+    document.getElementById('imagePopup').classList.remove('hidden');
+  }
+
+  // ❌ Close popup
+  function closePopup() {
+    document.getElementById('imagePopup').classList.add('hidden');
+  }
+
+  // Also close when clicking outside the image
+  document.getElementById('imagePopup').addEventListener('click', (e) => {
+    if (e.target.id === 'imagePopup') {
+      closePopup();
+    }
+  });
+
