@@ -42,6 +42,47 @@
       overflow-x: hidden;
     }
 
+    #Telegram {
+      animation: pulseRotate 1.5s infinite cubic-bezier(.2,.9,.2,1);
+    }
+
+    @keyframes pulseRotate {
+      0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.9;
+      }
+      50% {
+        transform: scale(1.15) rotate(3deg);
+        opacity: 1;
+      }
+    }
+
+    #hovertxt {
+      animation: pulse 1.2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+
+
+    /* h1 {
+        width: 30ch;
+        margin: 160px 25opx;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(30) infinite alternate-reverse;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0ch;
+        }
+    } */
+    
 
 </style>
 </head>
@@ -106,7 +147,7 @@
                 <div class="flex justify-center items-center gap-8 mt-10 text-[#FCC11D]">
                     <div>
                         <div data-aos="zoom-in-right" data-aos-duration="800" class="flex flex-col justify-center items-center text-[19px] ">
-                            <p class="font-italic">កូនប្រុស​​នាម</p> <p class="font-medium mt-1 text-[20px]">សៀង សុខណៃ</p>
+                            <p>កូនប្រុស​​នាម</p> <p class="font-medium mt-1 text-[20px]">សៀង សុខណៃ</p>
                         </div>
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="800">
@@ -120,7 +161,7 @@
                 </div>
                 <div class="flex flex-col justify-center items-center text-md mt-10">
                     <div data-aos="zoom-in" data-aos-duration="800" class="flex gap-2">
-                        ប្រព្រឹត្តទៅនៅ<p class="font-medium">ថ្ងៃសៅរ៍ទី 20 ខែធ្នូ 2025</p> ដែលត្រូវនឹងថ្ងៃ ១កើត
+                        ប្រព្រឹត្តទៅនៅ<p class="font-medium">ថ្ងៃសៅរ៍ទី 20 ខែធ្នូ ឆ្នាំ2025</p> ដែលត្រូវនឹងថ្ងៃ ១កើត
                     </div>
                     <p data-aos="zoom-in" data-aos-duration="800" class="mt-1"> ខែ បុស្ស ឆ្នាំម្សាញ់ សប្តស័ក ព.ស ២៩៦៩ វេលាម៉ោង 5:00 ល្ងាច</p>
                     <p data-aos="zoom-in" data-aos-duration="800" class="mt-1">នៅគេហដ្ឋានខាងស្រីស្ថិតនៅ ភូមិព្រៃចង្ហារកើត ឃុំបន្ទាយនាង</p>
@@ -164,7 +205,7 @@
                     <a  data-aos="zoom-in" data-aos-duration="800" href="https://maps.app.goo.gl/Yu1q1gwFG7PTtrUV8" class="relative">
                         <div data-aos="fade-up" data-aos-duration="600" class="absolute flex gap-1 font-medium bg-white/50 pl-4 pr-4 pt-2 pb-2 rounded-2xl text-md mt-4 ml-2">
                             <img class="w-6" src="./image/logomap.png" alt="">
-                            Google Map
+                            ចូលមើល Map
                         </div>
                         <img class="w-[380px] rounded-2xl mt-2" src="./image/map.JPG" alt="">
                         
@@ -222,9 +263,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5 mb-2 flex flex-col justify-center items-center">
-                        
+                </div>
+                <div data-aos="fade-up" data-aos-duration="800" class="w-full  flex flex-col items-center justify-center mt-4 bg-[#9ecfb9]/50 p-2 text-sm text-gray-900">
+                    <div class="flex items-center justify-center font-medium mt-4 text-[20px]">
+                        <div>
+                            ទំនាក់ទំនង (Contact Us)
+                        </div>
+                        <div class="" id="Telegram">
+                            <img src="./image/Telegram.png" alt="Telegram" class="h-6 ml-2">
+                        </div>
                     </div>
+                    <div class="text-center mt-5 text-[18px]">
+                        បើមានចំណាប់អារម្មណ៍ចង់ធ្វើ សំបុត្រអញ្ជើញ Digital 
+                    </div>
+                    <div class="text-center mt-2 text-[18px]">
+                        និងមានតម្លៃសមរម្យ​ សូមទាក់ទងតាមខាងក្រោម 
+                    </div>
+                    <a href="https://t.me/Vann_Sakkk" id="hovertxt" class="bg-[#9ecfb1] p-2 w-[94%] rounded-2xl mb-2 text-center font-medium mt-2 text-[18px]">
+                        លេខទូរស័ព្ទ៖ 086 513 225 (@Vann_Sakkk)
+                    </a>
+                    
                 </div>
             </div>
         </div>
