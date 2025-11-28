@@ -70,6 +70,26 @@
           100% { transform: scale(1); }
         }
 
+        #hoverauto {
+          animation: pulse 1s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.03); }
+          100% { transform: scale(1); }
+        }
+
+        #hoverpic {
+          animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.05); }
+          100% { transform: scale(1); }
+        }
+
 
 
         /* h1 {
@@ -92,7 +112,7 @@
         <div class="relative h-screen w-screen bg-[url('image/bg--.png')] bg-cover bg-center ">
             <div class="flex flex-col items-center justify-center pt-15 absolute inset-0">
                 <div class="" data-aos="fade-up" data-aos-duration="2000">
-                    <img class="h-[200px]" src="./image//text-.png" alt="">
+                    <img  id="hoverpic" class="h-[200px]" src="./image//text-.png" alt="">
                 </div>
 
                 <div class="mt-[50px]" data-aos="fade-up" data-aos-duration="2000">
@@ -177,19 +197,19 @@
                             </p>
                         </div>
                         <div  data-aos="zoom-in" data-aos-duration="800"  class="mt-2 flex flex-wrap justify-center gap-1.5 text-center" >
-                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10 " >
+                            <div  id="hoverauto" class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10 " >
                               <p id="days" class="text-md text-white font-bold">00</p>
                               <span class="text-sm text-white">ថ្ងៃ</span>
                             </div>
-                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
+                            <div id="hoverauto" class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
                               <p id="hours" class="text-md text-white font-bold">00</p>
                               <span class="text-sm text-white">ម៉ោង​</span>
                             </div>
-                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
+                            <div id="hoverauto" class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
                               <p id="minutes" class="text-md text-white font-bold">00</p>
                               <span class="text-sm text-white">នាទី</span>
                             </div>
-                            <div class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
+                            <div id="hoverauto" class="flex flex-col justify-center items-center bg-red-700 backdrop-blur-md rounded-xl p-6 w-10 h-10">
                               <p id="seconds" class="text-md text-white font-bold">00</p>
                               <span class="text-sm text-white">វិនាទី</span>
                             </div>
@@ -204,9 +224,11 @@
                 <div class="mt-10 flex flex-col text-md justify-center items-center">
                     <p  data-aos="zoom-in" data-aos-duration="800" class="wedding text-[20px] font-medium  text-[#FCC11D]">ទីតាំងកម្មវិធី</p>
                     <a  data-aos="zoom-in" data-aos-duration="800" href="https://maps.app.goo.gl/Yu1q1gwFG7PTtrUV8" class="relative">
-                        <div data-aos="fade-up" data-aos-duration="600" class="absolute flex gap-1 font-medium bg-white/50 pl-4 pr-4 pt-2 pb-2 rounded-2xl text-md mt-4 ml-2">
-                            <img class="w-6" src="./image/logomap.png" alt="">
-                            ចូលមើល Map
+                        <div data-aos="fade-up" data-aos-duration="600" class="absolute flex gap-1text-md mt-4 ml-2">
+                            <div id="hoverauto" class="flex items-center justify-center gap-2 font-medium bg-white/50 pl-4 pr-4 pt-2 pb-2 rounded-2xl ">
+                                <img class="w-6" src="./image/logomap.png" alt="">
+                                ចូលមើល Map
+                            </div>
                         </div>
                         <img class="w-[380px] rounded-2xl mt-2" src="./image/map.JPG" alt="">
                         
@@ -264,30 +286,32 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="w-screen  flex flex-col items-center justify-center mt-4 bg-[#9ecfb9]/50 p-2 text-sm text-gray-900">
+                            <div class="flex items-center justify-center font-medium mt-4 text-[18px]">
+                                <div>
+                                    ទំនាក់ទំនង (Contact Us)
+                                </div>
+                                <div class="" id="Telegram">
+                                    <img src="./image/contact.png" alt="Telegram" class="h-6 ml-2">
+                                </div>
+                            </div>
+                            <div class="text-center mt-4 text-[15px]">
+                                បើមានចំណាប់អារម្មណ៍ចង់ធ្វើ សំបុត្រអញ្ជើញ Digital និងមាន
+                            </div>
+                            <div class="text-center mt-2 text-[15px]">
+                                តម្លៃសមរម្យ​ សូមទាក់ទងតាមខាងក្រោម 
+                            </div>
+                            <a href="https://t.me/Vann_Sakkk" id="hovertxt" class="flex items-center justify-center bg-[#9ecfb1] p-2 w-[93%] rounded-2xl mb-2 text-center font-medium mt-2 text-[15px]">
+                                <img src="./image/Telegram.png" alt="Telegram" class="h-6 mr-2">
+                                <div>
+                                    លេខទូរស័ព្ទ៖ 086 513 225 (@Vann_Sakkk)
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
-                <!-- <div data-aos="fade-up" data-aos-duration="800" class="w-full  flex flex-col items-center justify-center mt-4 bg-[#9ecfb9]/50 p-2 text-sm text-gray-900">
-                    <div class="flex items-center justify-center font-medium mt-4 text-[18px]">
-                        <div>
-                            ទំនាក់ទំនង (Contact Us)
-                        </div>
-                        <div class="" id="Telegram">
-                            <img src="./image/contact.png" alt="Telegram" class="h-6 ml-2">
-                        </div>
-                    </div>
-                    <div class="text-center mt-4 text-[15px]">
-                        បើមានចំណាប់អារម្មណ៍ចង់ធ្វើ សំបុត្រអញ្ជើញ Digital និងមាន
-                    </div>
-                    <div class="text-center mt-2 text-[15px]">
-                        តម្លៃសមរម្យ​ សូមទាក់ទងតាមខាងក្រោម 
-                    </div>
-                    <a href="https://t.me/Vann_Sakkk" id="hovertxt" class="flex items-center justify-center bg-[#9ecfb1] p-2 w-[94%] rounded-2xl mb-2 text-center font-medium mt-2 text-[15px]">
-                        <img src="./image/Telegram.png" alt="Telegram" class="h-6 mr-2">
-                        <div>
-                            លេខទូរស័ព្ទ៖ 086 513 225 (@Vann_Sakkk)
-                        </div>
-                    </a>
-                    
-                </div> -->
             </div>
         </div>
     </div>
