@@ -1,3 +1,4 @@
+alert("Hello World!");
 
 const eventDate = new Date("December 20, 2025 17:00:00").getTime();
 
